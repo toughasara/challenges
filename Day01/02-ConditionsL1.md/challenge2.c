@@ -17,7 +17,7 @@ int main()
                 break;   
         case'u':printf("%c est un voyelle", caractere);
                 break;    
-        default:printf("%c n est pas un voyelle");   
+        default:printf("n'est pas un voyelle");   
                 break;    
     }
 

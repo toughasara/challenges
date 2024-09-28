@@ -13,7 +13,7 @@ int main()
     printf("veuillez entrer le nombre c :");
     scanf("%f", &c);
     Moyenne_geometrique = pow((a * b * c), (1.0 / 3.0));
-    printf("Moyenne_geometrique est : %f ", Moyenne_geometrique);
+    printf("Moyenne_geometrique est : %.2f ", Moyenne_geometrique);
 
     
     return 0;
