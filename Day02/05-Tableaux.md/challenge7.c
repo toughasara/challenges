@@ -3,28 +3,30 @@
 
 int main()
 {
-    int i, n, x, m;
+    int i, g, n, m, j;
+
     printf("veuillez entrer la taille du tableau : ");
     scanf("%d", &n);
     int T[n];
+
     for(i=0;i<n;i++){
         printf("T[%d] = ", i);
         scanf("%d", &T[i]);
     }
-    for(i=0;i<n;i++){
-        x = 0;
-        for(i=0;i<n;i++){
-            if(T[i] > T[i+1])
+
+    for(i=0 ; i<=n ; i++){
+        for(g=1+i ; g<n ; g++){
+            if(T[i] > T[g])
               m = T[i];
-              T[i] = T[i+2];
-              m = T[i+1];
-              x++;    
+              T[i] = T[g];
+              m = T[g];    
         }
-        if(x == 0)
+        if(m == 0)
           break;
     }
-    for(i=0;i<n;i++){
-        printf("T[%d] = %d \n", i, T[i]);
+
+    for(j=0 ; j<n ; j++){
+        printf("T[%d] = %d \n", j, T[j]);
     }
     
 
