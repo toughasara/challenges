@@ -6,17 +6,18 @@ int main()
 {
     char P[50];
     char D[50];
-    char R[50];
         printf("donner la premiere mot : ");
         scanf("%s", P);
     
         printf("donner la deuxieme mot : ");
         scanf("%s", D);
 
-        strcpy(R,P);
-        strcat(R,D);
+        if(P[0] == D[0])
+            printf("les chaines sont egales");
 
-        printf("la chaine resultante est :%s",R);
+        else 
+            printf("les chaines sont differentes");
+
 
     return 0;
     

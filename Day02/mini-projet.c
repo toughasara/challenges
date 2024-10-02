@@ -159,14 +159,15 @@ int main()
         case 6:
             Afficher_nombre_total();
             break;
+        case 7:
+          printf("vous avez quittez !");
+          return 0;
         default:
             printf("ce choix n'existe pas !");
         }
     }
     while (choix != 7);
-    
-    if(choix == 7)
-        printf("vous avez quittez !");
+
 
     return 0;
 }
